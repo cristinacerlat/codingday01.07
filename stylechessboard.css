@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 2px;
+    background-color: #014421;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 70px ;
+    margin: 5px auto;
+    padding: 2px;
+}
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+th {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+
+}
+td {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.white-cell {
+    background-color: #bffed0;
+    border: 2px solid;
+}
+.black-cell {
+    background-color: #3a754e;
+    border: 2px solid;
+}
+.tooltip {
+  visibility: hidden;
+  width:fit-content;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: 5px;
+  transform: translateY(-100%);
+}
+.chess-piece:hover .tooltip {
+    visibility: visible;
+}
+.white-piece .tooltip {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 3px solid #000000;
+    font-size: 20px;
+}
+.black-piece .tooltip {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    font-size: 20px;
+}
+td:hover {
+    background-color: white;
+}
+.chess-piece:hover {
+    color: #d2b48c;
+}
